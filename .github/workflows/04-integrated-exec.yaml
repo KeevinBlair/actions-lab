@@ -92,7 +92,7 @@ jobs:
         if: ${{ always() }}
         with:
           path: ./playwright-report
-          name: Relatório de
+          name: Relatório de testes
 
   deploy:
     runs-on: ubuntu-latest
