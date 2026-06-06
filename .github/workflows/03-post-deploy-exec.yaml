@@ -1,7 +1,7 @@
 # CI de Nível 03 - Disparo após a conclusão de outra pipeline
 
 # nome da pipeline
-name: 'Execução por Deploy Test'
+name: 'N3 - Execução por Deploy Test'
 
 # gatilhos / triggers - regras de disparo
 # gatilho manual = workflow_dispatch
@@ -10,7 +10,7 @@ name: 'Execução por Deploy Test'
 
 on:
   workflow_run:
-    workflows: ['Manual Execution', 'Scheduled Execution']
+    workflows: ['N1 - Execução Manual', 'N2 - Execução Agendada']
     types:
       - completed
 
