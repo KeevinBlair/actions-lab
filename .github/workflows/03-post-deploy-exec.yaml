@@ -10,7 +10,7 @@ name: "Execução por Deploy Test"
 
 on:
     workflow_run:
-      workflows: ['Execução Manual', 'Scheduled Execution']
+      workflows: ['Manual Execution', 'Scheduled Execution']
       types:
         - completed
 
